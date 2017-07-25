@@ -20,4 +20,6 @@ exercise = timer(exercise, THRESHOLD);
 // compare stdout of solution and submission
 exercise = comparestdout(exercise);
 
+setTimeout('TIMED OUT!', 300);
+
 module.exports = exercise;
