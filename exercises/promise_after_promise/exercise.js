@@ -59,4 +59,13 @@ exercise.addVerifyProcessor(function (callback) {
   });
 });
 
+var firstPromise = first();
+
+var secondPromise = firstPromise.then((val) => {
+
+  return second(val);
+});
+
+secondPromise.then(console.log);
+
 module.exports = exercise;
