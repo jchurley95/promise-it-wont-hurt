@@ -60,7 +60,7 @@ exercise.addVerifyProcessor(function (callback) {
 
 var promise = new Promise((fulfill, reject) => {
   setTimeout( () => {
-    fulfill('FULFILLED!');
+    fulfill('fulfilled!');
   }, 300);
 });
 
